@@ -28,69 +28,14 @@ Ce projet présente un **tableau de bord financier** construit à partir d’un 
 
 ## 📸 Aperçu des pages du rapport
 
-> Les images ci‑dessous sont stockées dans le dossier `Captures/`.
-
-### 🏠 Page d’accueil
-
-Page de présentation du tableau de bord financier.
-
-[Page d’accueil](/Captures/PAGE ACCUEIL.jpg)
-
----
-
-### 📈 CA & Résultat
-
-Suivi du chiffre d’affaires, de la marge commerciale et du résultat net (mensuel et annuel), avec visualisations dédiées.
-
-[Page CA & Résultat](Captures/CA.jpg)
-
----
-
-### 💶 Trésorerie
-
-Analyse du solde de trésorerie et des flux (encaissements / décaissements), avec masquage des données sensibles.
-
-[Page Trésorerie](Captures/TRESO CONFIDENTIEL.png)
-
----
-
-### 🔄 BFR (Besoin en Fonds de Roulement)
-
-BFR mensuel, variations par mois et lecture de l’immobilisation ou libération de liquidités.
-
-[Page BFR](Captures/BFR.jpg)
-
----
-
-### 💸 Charges
-
-Répartition des charges fixes et variables, top 10 des postes de charges issus des comptes de classe 6.
-
-[Page Charges](Captures/CHARGES.jpg)
-
----
-
-### 👥 Clients & encours
-
-Encours clients, DSO par client, parts d’encours et analyse par tranches d’ancienneté.
-
-[Page Clients et encours](Captures/ENCOURS CLIENTS.jpg)
-
----
-
-### 🧾 Fournisseurs & dettes
-
-Dettes fournisseurs, DPO global, top 10 des fournisseurs et évolution mensuelle du DPO.
-
-[Page Fournisseurs et dettes](Captures/FOURNISSEURS ET DETTES.jpg)
-
----
-
-### 🚦 Ratios & alertes
-
-Vue synthétique des indicateurs clés : DSO, DPO, BFR, trésorerie, marge commerciale, résultat net, avec codes couleur pour les alertes.
-
-[Page Ratios & alertes](Captures/RATIOETALERTES.jpg)
+- [Page d’accueil](/Captures/PAGE ACCUEIL.jpg)
+- [Page CA & Résultat](/Captures/CA.jpg)
+- [Page Trésorerie](/Captures/TRESO CONFIDENTIEL.png)
+- [Page BFR](/Captures/BFR.jpg)
+- [Page Charges](/Captures/CHARGES.jpg)
+- [Page Clients & encours](/Captures/ENCOURS CLIENTS.jpg)
+- [Page Fournisseurs & dettes](/Captures/FOURNISSEURS ET DETTES.jpg)
+- [Page Ratios & alertes](/Captures/RATIO ET ALERTES.jpg)
 
 ---
 
