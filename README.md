@@ -30,13 +30,12 @@ Ce projet présente un **tableau de bord financier** construit à partir d’un 
 
 - [Page d’accueil](https://github.com/Maia-iant/Tableau-de-bord-financier-partir-d-un-FEC-comptable/blob/main/Captures/PAGE%20ACCUEIL.jpg)
 - [Page CA & Résultat](/Captures/CA.jpg)
-- [Page Trésorerie](/Captures/TRESO CONFIDENTIEL.png)
+- [Page Trésorerie](https://github.com/Maia-iant/Tableau-de-bord-financier-partir-d-un-FEC-comptable/blob/main/Captures/TRESO%20CONFIDENTIEL.png)
 - [Page BFR](/Captures/BFR.jpg)
 - [Page Charges](/Captures/CHARGES.jpg)
-- [Page Clients & encours](/Captures/ENCOURS CLIENTS.jpg)
-- [Page Fournisseurs & dettes](/Captures/FOURNISSEURS ET DETTES.jpg)
-- [Page Ratios & alertes](/Captures/RATIO ET ALERTES.jpg)
-
+- [Page Clients et encours](https://github.com/Maia-iant/Tableau-de-bord-financier-partir-d-un-FEC-comptable/blob/main/Captures/ENCOURS%20CLIENTS.jpg)
+- [Page Fournisseurs et dettes](https://github.com/Maia-iant/Tableau-de-bord-financier-partir-d-un-FEC-comptable/blob/main/Captures/FOURNISSEURS%20ET%20DETTES.jpg)
+- [Page Ratios & alertes](https://github.com/Maia-iant/Tableau-de-bord-financier-partir-d-un-FEC-comptable/blob/main/Captures/RATIO%20ET%20ALERTES.jpg)
 ---
 
 ## 🏗️ Modélisation
