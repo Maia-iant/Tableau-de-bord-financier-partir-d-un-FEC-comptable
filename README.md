@@ -28,7 +28,7 @@ Ce projet présente un **tableau de bord financier** construit à partir d’un 
 
 ## 📸 Aperçu des pages du rapport
 
-- [Page d’accueil](/Captures/PAGE ACCUEIL.jpg)
+- [Page d’accueil](https://github.com/Maia-iant/Tableau-de-bord-financier-partir-d-un-FEC-comptable/blob/main/Captures/PAGE%20ACCUEIL.jpg)
 - [Page CA & Résultat](/Captures/CA.jpg)
 - [Page Trésorerie](/Captures/TRESO CONFIDENTIEL.png)
 - [Page BFR](/Captures/BFR.jpg)
