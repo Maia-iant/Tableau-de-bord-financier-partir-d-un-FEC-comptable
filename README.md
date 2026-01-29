@@ -1,67 +1,123 @@
 # 📊 Tableau de bord financier à partir d’un FEC comptable
 
-Ce projet présente un **tableau de bord financier** construit à partir d’un **Fichier des Écritures Comptables (FEC)**, en utilisant Power BI. L’objectif est de transformer un FEC brut en outil de pilotage pour la direction : CA, résultat, trésorerie, BFR, clients, fournisseurs, ratios et simulations.
+Ce projet présente un **tableau de bord financier** construit à partir d’un **Fichier des Écritures Comptables (FEC)**, avec Power BI. L’objectif est de transformer un FEC brut en outil de pilotage pour la direction : activité, rentabilité, trésorerie, BFR, risques clients/fournisseurs et alertes.
 
-> ⚠️ Par confidentialité, le fichier Power BI n’est pas partagé. Le dépôt contient uniquement des **captures d’écran** illustrant le rapport final et la structure du modèle.
+> ⚠️ Par confidentialité, le fichier Power BI n’est pas publié. Le dépôt contient uniquement des **captures d’écran** du rapport.
 
 ---
 
 ## 🧾 Source de données : FEC
 
 - Fichier des Écritures Comptables conforme à la norme française.  
-- Table de faits `fec` (écritures) + dimensions :
+- Table de faits `fec` (écritures) reliée à :
   - `Dates` (calendrier complet).  
-  - `PCG` (plan comptable, regroupements P&L).  
+  - `PCG` (plan comptable général, regroupements P&L).  
   - Tables métiers (étapes de compte de résultat, paramètres de simulation, etc.).
 
+À partir de cette base, le rapport reconstruit les principaux états financiers et indicateurs de pilotage.
+
 ---
 
-## 🧠 Objectifs
+## 🧠 Objectifs du tableau de bord
 
 - Reconstituer un **compte de résultat** (CA, marge, résultat net).  
-- Suivre **trésorerie** et **BFR** à partir du FEC.  
-- Analyser **encours clients** (DSO, ancienneté).  
-- Analyser **dettes fournisseurs** (DPO, poids par fournisseur).  
-- Mettre en place des **ratios/alertes** (vert, orange, rouge).  
-- Proposer une page **“Prévisions & simulations”** avec scénarios *what‑if*.
+- Suivre la **trésorerie** et le **BFR** à partir des écritures.  
+- Analyser les **encours clients** (DSO, ancienneté, top clients).  
+- Analyser les **dettes fournisseurs** (DPO, poids par fournisseur).  
+- Mettre en place des **ratios & alertes** (codes couleur).  
 
 ---
 
-## 🧩 Pages du rapport
+## 📸 Aperçu des pages du rapport
 
-- **CA & Résultat** : CA mensuel, marge, résultat net, waterfall P&L.  
-- **Trésorerie** : solde mensuel, encaissements/décaissements, comptes 51xx.  
-- **BFR** : BFR en montant et en jours, variation mensuelle.  
-- **Clients & encours** : encours par client, DSO global et par client, tranches d’ancienneté.  
-- **Fournisseurs & dettes** : dettes par fournisseur, DPO global et par fournisseur.  
-- **Ratios & alertes** : KPI DSO, DPO, BFR, trésorerie, marge, résultat avec codes couleur.  
-- **Prévisions & simulations** : paramètres de variation CA/charges/DSO/DPO, indicateurs prévisionnels.  
-- **Synthèse A4** : page “one‑page” pour export PDF avec 6–8 indicateurs clés.
+> Les images ci‑dessous sont stockées dans le dossier `captures/`.
+
+### 🏠 Page d’accueil
+
+Page de bienvenue avec visuel de contexte et titre du rapport.
+
+![Page d’accueil](captures/PAGE-ACCUEIL.jpg)
+
+---
+
+### 📈 CA & Résultat
+
+Suivi du chiffre d’affaires, de la marge commerciale et du résultat net (mensuel et annuel), avec graphique waterfall du compte de résultat.
+
+![Page CA & Résultat](captures/CA.jpg)
+
+---
+
+### 💶 Trésorerie
+
+Analyse des soldes de trésorerie et des flux (encaissements / décaissements), avec masquage des données sensibles.
+
+![Page Trésorerie](captures/TRESO-CONFIDENTIEL.jpg)
+
+---
+
+### 🔄 BFR (Besoin en Fonds de Roulement)
+
+BFR mensuel en montant, variation du BFR par mois et interprétation (immobilisation ou libération de liquidités).
+
+![Page BFR](captures/BFR.jpg)
+
+---
+
+### 💸 Charges
+
+Répartition des charges fixes et variables, top 10 des postes de charges à partir du FEC (comptes de classe 6).
+
+![Page Charges](captures/CHARGES.jpg)
+
+---
+
+### 👥 Clients & encours
+
+Encours clients par mois, détail par client, DSO par client, part de chaque client dans l’encours et analyse par tranches d’ancienneté.
+
+![Page Clients et encours](captures/ENCOURS-CLIENTS.jpg)
+
+---
+
+### 🧾 Fournisseurs & dettes
+
+Encours fournisseurs, DPO global, top 10 des dettes par fournisseur et évolution mensuelle du DPO.
+
+![Page Fournisseurs et dettes](captures/FOURNISSEURS-ET-DETTES.jpg)
+
+---
+
+### 🚦 Ratios & alertes
+
+Vue synthétique des indicateurs clés : DSO, DPO, BFR, trésorerie, marge commerciale, résultat net, avec code couleur (vert / rouge) pour identifier rapidement les points d’alerte.
+
+![Page Ratios & alertes](captures/RATIO-ET-ALERTES.jpg)
 
 ---
 
 ## 🏗️ Modélisation
 
-- Modèle en **étoile** : table `fec` centrale, reliée aux dimensions.  
-- Table calendrier dédiée pour les calculs temporels (YTD, N/N‑1, ratios en jours).  
-- Mesures DAX séparées entre :
-  - Réalité (`CA`, `Resultat_Net`, `DSO`, `DPO`, `BFR`, etc.).  
-  - Prévisions (`CA_Prevu`, `Resultat_Net_Prev`, `BFR_Prev`, etc.).
+- Modèle en **étoile** : table `fec` centrale + dimensions (`Dates`, `PCG`, etc.).  
+- Table calendrier dédiée pour la time intelligence (variations N/N‑1, YTD, DSO/DPO).  
+- Mesures DAX pour :
+  - Recalculer les soldes (débit / crédit).  
+  - Calculer DSO, DPO, BFR, marges, encours, ratios.  
 
 ---
 
-## 📸 Contenu du dépôt
+## 📂 Contenu du dépôt
 
-- Dossier `captures/` : captures d’écran des pages du rapport.  
-- `README.md` : description du projet, objectifs, structure du modèle.  
-- Éventuels schémas de modèle ou extraits de formules génériques (sans données réelles).
+- `captures/` : captures d’écran anonymisées des pages du tableau de bord.  
+- `README.md` : description de la démarche, des pages et de la modélisation.
 
-> 🔐 Aucun FEC réel, aucune donnée sensible et aucun fichier `.pbix` ne sont publiés.
+> 🔐 Aucun FEC réel, aucune donnée nominative et aucun fichier `.pbix` n’est publié.
 
 ---
 
 ## 🚀 Pistes d’évolution
 
-- Ajout d’un vrai **budget** pour comparer Réel vs Budget.  
-- Scénarios avancés (stress tests sur DSO/DPO, variation de volumes et de marges).  
-- Gestion multi‑exercices / multi‑sociétés à partir de plusieurs FEC.
+- Ajouter un onglet **Prévisions & simulations** (scénarios de variation CA, charges, DSO/DPO).  
+- Intégrer un budget pour comparer Réel vs Budget.  
+- Gérer plusieurs exercices / sociétés à partir de FEC multiples.
+
