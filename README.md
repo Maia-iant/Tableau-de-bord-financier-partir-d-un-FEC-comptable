@@ -34,7 +34,7 @@ Ce projet présente un **tableau de bord financier** construit à partir d’un 
 
 Page de présentation du tableau de bord financier.
 
-![Page d’accueil](Captures/PAGE ACCUEIL.jpg)
+[Page d’accueil](/Captures/PAGEACCUEIL.jpg)
 
 ---
 
@@ -42,7 +42,7 @@ Page de présentation du tableau de bord financier.
 
 Suivi du chiffre d’affaires, de la marge commerciale et du résultat net (mensuel et annuel), avec visualisations dédiées.
 
-![Page CA & Résultat](Captures/CA.jpg)
+[Page CA & Résultat](Captures/CA.jpg)
 
 ---
 
@@ -50,7 +50,7 @@ Suivi du chiffre d’affaires, de la marge commerciale et du résultat net (mens
 
 Analyse du solde de trésorerie et des flux (encaissements / décaissements), avec masquage des données sensibles.
 
-![Page Trésorerie](Captures/TRESO CONFIDENTIEL.png)
+[Page Trésorerie](Captures/TRESOCONFIDENTIEL.png)
 
 ---
 
@@ -58,7 +58,7 @@ Analyse du solde de trésorerie et des flux (encaissements / décaissements), av
 
 BFR mensuel, variations par mois et lecture de l’immobilisation ou libération de liquidités.
 
-![Page BFR](Captures/BFR.jpg)
+[Page BFR](Captures/BFR.jpg)
 
 ---
 
@@ -66,7 +66,7 @@ BFR mensuel, variations par mois et lecture de l’immobilisation ou libération
 
 Répartition des charges fixes et variables, top 10 des postes de charges issus des comptes de classe 6.
 
-![Page Charges](Captures/CHARGES.jpg)
+[Page Charges](Captures/CHARGES.jpg)
 
 ---
 
@@ -74,7 +74,7 @@ Répartition des charges fixes et variables, top 10 des postes de charges issus 
 
 Encours clients, DSO par client, parts d’encours et analyse par tranches d’ancienneté.
 
-![Page Clients et encours](Captures/ENCOURS CLIENTS.jpg)
+[Page Clients et encours](Captures/ENCOURSCLIENTS.jpg)
 
 ---
 
@@ -82,7 +82,7 @@ Encours clients, DSO par client, parts d’encours et analyse par tranches d’a
 
 Dettes fournisseurs, DPO global, top 10 des fournisseurs et évolution mensuelle du DPO.
 
-![Page Fournisseurs et dettes](Captures/FOURNISSEURS ET DETTES.jpg)
+[Page Fournisseurs et dettes](Captures/FOURNISSEURSETDETTES.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Dettes fournisseurs, DPO global, top 10 des fournisseurs et évolution mensuelle
 
 Vue synthétique des indicateurs clés : DSO, DPO, BFR, trésorerie, marge commerciale, résultat net, avec codes couleur pour les alertes.
 
-![Page Ratios & alertes](Captures/RATIO ET ALERTES.jpg)
+[Page Ratios & alertes](Captures/RATIOETALERTES.jpg)
 
 ---
 
