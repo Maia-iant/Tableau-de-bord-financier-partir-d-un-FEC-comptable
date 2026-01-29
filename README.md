@@ -34,7 +34,7 @@ Ce projet présente un **tableau de bord financier** construit à partir d’un 
 
 Page de présentation du tableau de bord financier.
 
-[Page d’accueil](/Captures/PAGEACCUEIL.jpg)
+[Page d’accueil](/Captures/PAGE ACCUEIL.jpg)
 
 ---
 
@@ -50,7 +50,7 @@ Suivi du chiffre d’affaires, de la marge commerciale et du résultat net (mens
 
 Analyse du solde de trésorerie et des flux (encaissements / décaissements), avec masquage des données sensibles.
 
-[Page Trésorerie](Captures/TRESOCONFIDENTIEL.png)
+[Page Trésorerie](Captures/TRESO CONFIDENTIEL.png)
 
 ---
 
@@ -74,7 +74,7 @@ Répartition des charges fixes et variables, top 10 des postes de charges issus 
 
 Encours clients, DSO par client, parts d’encours et analyse par tranches d’ancienneté.
 
-[Page Clients et encours](Captures/ENCOURSCLIENTS.jpg)
+[Page Clients et encours](Captures/ENCOURS CLIENTS.jpg)
 
 ---
 
@@ -82,7 +82,7 @@ Encours clients, DSO par client, parts d’encours et analyse par tranches d’a
 
 Dettes fournisseurs, DPO global, top 10 des fournisseurs et évolution mensuelle du DPO.
 
-[Page Fournisseurs et dettes](Captures/FOURNISSEURSETDETTES.jpg)
+[Page Fournisseurs et dettes](Captures/FOURNISSEURS ET DETTES.jpg)
 
 ---
 
